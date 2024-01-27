@@ -37,7 +37,7 @@ public class BeehiveBlockUseMixin {
     @Inject(method="onUse", at=@At(value="RETURN", ordinal=1))
     public void onUseStick(BlockState blockState, World world, BlockPos blockPos,
             PlayerEntity playerEntity, Hand hand, BlockHitResult blockHitResult,
-            CallbackInfoReturnable ci) {
+            CallbackInfoReturnable<?> ci) {
 
         // As we're injecting into the point where super.onUse() gets called,
         // shears and bottles do not reach this point.

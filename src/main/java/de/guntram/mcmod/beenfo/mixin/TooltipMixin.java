@@ -28,7 +28,7 @@ public abstract class TooltipMixin {
     @Inject(method="getTooltip",            
             at=@At("RETURN"), locals=LocalCapture.CAPTURE_FAILHARD)
     private void getTooltipdone(PlayerEntity playerIn, TooltipContext advanced, 
-            CallbackInfoReturnable<List> ci,
+            CallbackInfoReturnable<List<?>> ci,
             List<Text> list) {
 
         try {

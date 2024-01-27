@@ -9,7 +9,7 @@ import de.guntram.mcmod.fabrictools.GuiModOptions;
 public class MMConfigurationHandler implements ModMenuApi
 {
     @Override
-    public ConfigScreenFactory getModConfigScreenFactory() {
+    public ConfigScreenFactory<?> getModConfigScreenFactory() {
         return screen -> new GuiModOptions(screen, Beenfo.MODNAME, ConfigurationProvider.getHandler(Beenfo.MODNAME));
     }
 }
