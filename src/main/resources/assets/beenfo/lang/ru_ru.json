@@ -1,5 +1,5 @@
 {
-    "tooltip.bees": "§6 Пчел%d",
+    "tooltip.bees": "§6Пчёлы: %d",
     "tooltip.unnamed": "§7- Безымянная пчела",
     "tooltip.honey": "§6Мёд: %s",
     "tooltip.name": "§e- %s",
